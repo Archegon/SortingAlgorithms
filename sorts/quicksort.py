@@ -5,11 +5,11 @@ def _partition(arr, low, high, sort="ascending"):
     pivot = arr[high]
 
     for j in range(low, high):
-        if sort is "ascending":
+        if sort == "ascending":
             if arr[j] <= pivot:
                 i += 1
                 arr[i], arr[j] = arr[j] , arr[i]
-        elif sort is "descending":
+        elif sort == "descending":
             if arr[j] >= pivot:
                 i += 1
                 arr[i], arr[j] = arr[j] , arr[i]
